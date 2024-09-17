@@ -1,0 +1,23 @@
+.card-default{
+  border-radius: 18px;
+  border: 1px solid white;
+  opacity: .2;
+  transition: opacity 300ms;
+  position: relative;
+}
+.card-default:hover{
+  opacity: 1;
+}
+.card-title{
+  position:absolute;
+  top: 0;
+  right: 12px;
+  padding-left: 12px;
+  padding-right:12px;
+  padding-top:4px;
+  padding-bottom: 4px;
+  color:white;
+  transform: translateY(-50%);
+  border-radius: 12px;
+  background-color: #111111;
+}
