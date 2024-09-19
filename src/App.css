@@ -4,6 +4,7 @@
   opacity: .2;
   transition: opacity 300ms;
   position: relative;
+  transition: all 300ms;
 }
 .card-default:hover{
   opacity: 1;
@@ -20,4 +21,74 @@
   transform: translateY(-50%);
   border-radius: 12px;
   background-color: #111111;
+}
+.view-mode_active{
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row: span 9 / span 9
+}
+.view-mode_inactive{
+  grid-column-start: 10;
+  grid-column-end: 12;
+}
+
+
+.Grid1-default{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row: span 3 / span 3;
+}
+.Grid2-default{
+  grid-column-start: 6;
+  grid-column-end: 12;
+  grid-row: span 3 / span 3;
+}
+.Grid3-default{
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row: span 3 / span 3;
+}
+.Grid4-default{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: span 6/ span 6;
+}
+.Grid5-default{
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row: span 6/ span 6;
+}
+.Grid6-default{
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row: span 6 /span 6;
+}
+
+@media (min-width: 850px){
+  .Grid1-default{
+    grid-row: span 6 / span 6;
+    grid-column-end: 4;
+  }
+  .Grid2-default{
+    grid-column-start: 4;
+    grid-column-end: 9;
+  }
+  .Grid3-default{
+    grid-row: span 9 / span 9;
+    grid-column-start: 9;
+  }
+  .Grid4-default{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row:span 3 / span 3;
+  }
+  .Grid5-default{
+    grid-column-start: 7;
+    grid-column-end: 9;
+  }
+  .Grid6-default{
+    grid-column-start: 1;
+    grid-column-end:7;
+    grid-row: span 3 / span 3;
+  }
 }

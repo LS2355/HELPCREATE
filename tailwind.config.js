@@ -7,9 +7,11 @@ export default {
         "bg-color": "#111111",
         'tabs-bg': '#232323',
         'tabs': '#c9c9c9'
-        
       }
     },
+    screens:{
+      'over850px': '850px'
+    }
   },
   plugins: [],
 }
